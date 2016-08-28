@@ -1,0 +1,23 @@
+<?php use Helper\Html; ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><?php echo $this->title?:null?></title>
+        <?= Html::css('/css/semantic/semantic.min.css')?>
+        <?= Html::css('/css/style.css')?>
+    </head>
+    <body>
+        <header>
+            <h1>象牙文字</h1>
+        </header>
+        <main class="container">
+            <?php echo $_content_;?>
+        </main>
+        <footer>
+
+        </footer>
+    <?=Html::javascript("/js/jquery-3.1.0.slim.min.js")?>
+    <?=Html::javascript("/js/semantic.min.js")?>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<?php use Helper\Html;?>
+<?=Html::javascript("/js/app.js")?>
+<?php if ($templates) {?>
+<?php foreach( $templates as $template) {?>
+    <?=$template['template_name']?>
+<?php }?>
+<?php } else {?>
+    nothing
+<?php }?>
